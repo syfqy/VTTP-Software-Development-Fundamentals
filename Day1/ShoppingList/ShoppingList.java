@@ -57,9 +57,9 @@ public class ShoppingList {
         // loop until exit command is given
         while (!input.equals("exit")) {
             input = cons.readLine("> ");
-            String[] inputSplit = input.split(",(?=\\p{Alnum})");
+            String[] inputSplit = input.split(" ", 2);
             System.out.println(inputSplit[0]);
-            // System.out.println(inputSplit[1]);
+            System.out.println(inputSplit[1]);
             String command = inputSplit[0].trim().toLowerCase();
             String[] items = inputSplit[1].split(",");
             // System.out.println(inputSplit);
