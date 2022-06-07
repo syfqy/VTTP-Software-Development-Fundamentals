@@ -2,8 +2,8 @@
 ./**/*.class
 
 # dist & target folders
-./**/dist
-./**/target
+./**/dist/
+./**/target/
 
 # Log file
 *.log
