@@ -48,40 +48,48 @@ public class ShoppingList {
     }
 
     public static void main(String[] args) {
-        System.out.println("Welcome to your shopping cart");
 
+        // greet user
+        System.out.println("Welcome to your shopping cart");
+        System.out.println("List, add, remove or exit program");
+
+        // init vars
         Console cons = System.console();
         String input = "_";
         String[] validCommands = { "list", "add", "remove", "exit"}; // define supported operations
 
         // loop until exit command is given
         while (!input.equals("exit")) {
+
+            // read and process user input
             input = cons.readLine("> ");
-            String[] inputSplit = input.split(" ", 2);
-            System.out.println(inputSplit[0]);
-            System.out.println(inputSplit[1]);
-            String command = inputSplit[0].trim().toLowerCase();
-            String[] items = inputSplit[1].split(",");
-            // System.out.println(inputSplit);
-            // System.out.println(items);
-            // String[] items = Arrays.copyOfRange(inputSplit, 1, inputSplit.length);
+            String processedInput = input.replace(",", "").toLowerCase();
+            String[] inputSplit = processedInput.split(" ");
+            String command = inputSplit[0].trim();
             
             // validate input
             if (!Arrays.asList(validCommands).contains(command)) {
                 System.out.printf("%s is not supported, please enter another command %n", command);
             }
             
+            // perform operation
             switch (command) {
                 case "list":
                     listItems();
+                    break;
                 case "add":
+                    String[] items = Arrays.copyOfRange(inputSplit, 1, inputSplit.length); 
                     addItem(items);
                     break;
                 case "remove":
-                    int posToRemove = Integer.parseInt(items[0]);
+                    int posToRemove = Integer.parseInt(inputSplit[1]);
                     removeItem(posToRemove);
                     break;
             }
+            
         }
+
+        // exit program
+        System.out.print("Bye!");
     }
 }
