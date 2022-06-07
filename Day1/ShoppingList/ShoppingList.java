@@ -6,7 +6,7 @@ public class ShoppingList {
 
     static ArrayList<String> myShoppingList = new ArrayList<String>();
 
-    public static void listItems() {
+    private static void listItems() {
         if (myShoppingList.size() == 0) {
             System.out.println("Your cart is empty");
         } else {
@@ -17,7 +17,7 @@ public class ShoppingList {
         }
     }
 
-    public static void addItem(String[] items) {
+    private static void addItem(String[] items) {
 
         for (String item : items) {
             // check item already exists
@@ -31,7 +31,7 @@ public class ShoppingList {
         }
     }
 
-    public static void removeItem(int pos) {
+    private static void removeItem(int pos) {
         // check if list is empty
         if (myShoppingList.size() == 0) {
             System.out.println("Cannot remove. Shopping List is already empty.");
