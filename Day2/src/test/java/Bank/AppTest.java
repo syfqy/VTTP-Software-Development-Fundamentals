@@ -7,9 +7,6 @@ import org.junit.Test;
 import Bank.BankAccount;
 import Bank.FixedDepositAccount;
 
-/**
- * Unit test for simple App.
- */
 public class AppTest {
     
     @Test

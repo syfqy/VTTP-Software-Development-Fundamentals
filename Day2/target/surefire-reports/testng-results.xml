@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-08T14:07:23 SGT" name="Surefire suite" finished-at="2022-06-08T14:07:23 SGT" duration-ms="31">
+  <suite started-at="2022-06-08T15:04:52 SGT" name="Surefire suite" finished-at="2022-06-08T15:04:52 SGT" duration-ms="34">
     <groups>
     </groups>
-    <test started-at="2022-06-08T14:07:23 SGT" name="Surefire test" finished-at="2022-06-08T14:07:23 SGT" duration-ms="31">
+    <test started-at="2022-06-08T15:04:52 SGT" name="Surefire test" finished-at="2022-06-08T15:04:52 SGT" duration-ms="34">
       <class name="Bank.AppTest">
-        <test-method signature="testBankAcc()" started-at="2022-06-08T14:07:23 SGT" name="testBankAcc" finished-at="2022-06-08T14:07:23 SGT" duration-ms="16" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBankAcc -->
-        <test-method signature="testValidFdaChangeInterest()" started-at="2022-06-08T14:07:23 SGT" name="testValidFdaChangeInterest" finished-at="2022-06-08T14:07:23 SGT" duration-ms="5" status="PASS">
+        <test-method signature="testValidFdaChangeInterest()" started-at="2022-06-08T15:04:52 SGT" name="testValidFdaChangeInterest" finished-at="2022-06-08T15:04:52 SGT" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidFdaChangeInterest -->
-        <test-method signature="testInvalidFdaChangeDuration()" started-at="2022-06-08T14:07:23 SGT" name="testInvalidFdaChangeDuration" finished-at="2022-06-08T14:07:23 SGT" duration-ms="15" status="PASS">
+        <test-method signature="testInvalidFdaChangeDuration()" started-at="2022-06-08T15:04:52 SGT" name="testInvalidFdaChangeDuration" finished-at="2022-06-08T15:04:52 SGT" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidFdaChangeDuration -->
-        <test-method signature="testValidFdaChangeDuration()" started-at="2022-06-08T14:07:23 SGT" name="testValidFdaChangeDuration" finished-at="2022-06-08T14:07:23 SGT" duration-ms="15" status="PASS">
+        <test-method signature="testBankAcc()" started-at="2022-06-08T15:04:52 SGT" name="testBankAcc" finished-at="2022-06-08T15:04:52 SGT" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBankAcc -->
+        <test-method signature="testValidFdaChangeDuration()" started-at="2022-06-08T15:04:52 SGT" name="testValidFdaChangeDuration" finished-at="2022-06-08T15:04:52 SGT" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidFdaChangeDuration -->
-        <test-method signature="testInvalidFdaChangeInterest()" started-at="2022-06-08T14:07:23 SGT" name="testInvalidFdaChangeInterest" finished-at="2022-06-08T14:07:23 SGT" duration-ms="15" status="PASS">
+        <test-method signature="testInvalidFdaChangeInterest()" started-at="2022-06-08T15:04:52 SGT" name="testInvalidFdaChangeInterest" finished-at="2022-06-08T15:04:52 SGT" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidFdaChangeInterest -->
