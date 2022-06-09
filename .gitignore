@@ -1,8 +1,17 @@
 # Compiled class file
-**/.class
+**/*.class
 
 # Package Files
-**/.jar
+**/*.jar
 
 # IDE-specific dirs
 **/.vscode/
+
+# target folders
+**/target/
+
+#db folders
+**/*db*/
+
+# db files
+**/*.db

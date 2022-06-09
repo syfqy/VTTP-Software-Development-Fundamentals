@@ -10,8 +10,14 @@ import java.util.Scanner;
 
 public class ShoppingCartDB {
 
-    public static List<String> readDbFile(File dbFile) throws FileNotFoundException {
-        Scanner scanner = new Scanner(dbFile);
+    private File db;
+
+    public ShoppingCartDB(File db) {
+        this.db = db;
+    }
+
+    public List<String> readDbFile(File userDbRecord) throws FileNotFoundException {
+        Scanner scanner = new Scanner(userDbRecord);
         List<String> records = new LinkedList<>();
         while (scanner.hasNextLine()) {
             records.add(scanner.nextLine());
@@ -20,22 +26,15 @@ public class ShoppingCartDB {
         return records;
     }
 
-    public static void writeDbFile(ShoppingCart cart, File dbFile) {
+    public void writeDbFile(ShoppingCart cart, File userDbRecord) throws IOException {
         List<String> records = cart.getItemsInCart();
 
-        try {
-            FileWriter writer = new FileWriter(dbFile);
-            for (String item : records) {
-                writer.write(item);
-                writer.write("\n");
-            }
-            writer.close();
-        } catch (IOException e) {
-            System.out.println("Cannot write to db file");
-            e.printStackTrace();
+        FileWriter writer = new FileWriter(userDbRecord);
+        for (String item : records) {
+            writer.write(item + "\n");
         }
+        writer.close();
 
     }
 
-    
 }

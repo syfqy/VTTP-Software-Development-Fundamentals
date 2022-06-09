@@ -2,24 +2,22 @@ package day3.workshop;
 
 import java.util.LinkedList;
 import java.util.List;
-// import java.io.Console;
-// import java.io.File;
-// import java.util.Arrays;
-// import java.nio.file.Paths; 
-// import java.nio.file.Path;
 
 public class ShoppingCart {
 
-    public List<String> itemsInCart = new LinkedList<String>();
-    
+    // global vars
+    private List<String> itemsInCart = new LinkedList<String>();
+
+    // constructors
     public ShoppingCart() {
-        
+
     }
-    
+
     public ShoppingCart(List<String> ShoppingList) {
         this.itemsInCart = ShoppingList;
     }
 
+    // getters and setters
     public List<String> getItemsInCart() {
         return itemsInCart;
     }
@@ -28,6 +26,7 @@ public class ShoppingCart {
         this.itemsInCart = itemsInCart;
     }
 
+    // cart methods
     public void listItems() {
         if (itemsInCart.size() == 0) {
             System.out.println("Your cart is empty");
@@ -57,16 +56,17 @@ public class ShoppingCart {
         // check if list is empty
         if (itemsInCart.size() == 0) {
             System.out.println("Cannot remove. Shopping List is already empty.");
-        } else {
-            // check∫ valid index
-            if (pos - 1 > itemsInCart.size() || pos - 1 < 0) {
-                System.out.println("Invalid index, please enter a valid index");
-            } else {
-                // remove item
-                String removedItem = itemsInCart.remove(pos - 1);
-                System.out.printf("%s has been removed from cart %n", removedItem);
-            }
+            return;
         }
-    }
 
+        // check valid index
+        if (pos - 1 > itemsInCart.size() || pos - 1 < 0) {
+            System.out.println("Invalid index, please enter a valid index");
+            return;
+        }
+        // remove item
+        String removedItem = itemsInCart.remove(pos - 1);
+        System.out.printf("%s has been removed from cart %n", removedItem);
+
+    }
 }
