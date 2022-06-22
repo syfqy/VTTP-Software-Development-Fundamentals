@@ -14,4 +14,4 @@ target/
 *db/
 
 # db files
-*.db
+*.db.DS_Store
