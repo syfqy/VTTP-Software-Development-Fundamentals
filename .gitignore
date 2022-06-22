@@ -13,5 +13,5 @@ target/
 #db folders
 *db/
 
-# db files
-*.db.DS_Store
+# metadata
+DS_Store
