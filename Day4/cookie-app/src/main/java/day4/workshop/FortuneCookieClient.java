@@ -32,7 +32,6 @@ public class FortuneCookieClient {
         BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
         PrintWriter pw = new PrintWriter(socket.getOutputStream());
         
-
         // receive greeting
         readResponse(in);
         readResponse(in);
